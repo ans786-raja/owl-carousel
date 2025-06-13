@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <title>Carousel 03</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&amp;display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css"> 
+    <link rel="stylesheet" href="css/owl.theme.green.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <title>Carousel</title>
+   
+</head>
+<body>
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-header">
+                <h2 class="carousel-title">Carousel #03</h2>
+            </div>
+            <div class="carousel-wrapper">
+                <div class="owl-carousel owl-theme">
+                    <!-- Item 1 -->
+                    <div class="item">
+                        <div class="carousel-card">
+                            <div class="carousel-image" style="background-image: url(image/work-1.jpg);">
+                                <div class="carousel-content">
+                                    <span class="category-tag">Web Design</span>
+                                    <h3 class="carousel-heading"><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="item">
+                        <div class="carousel-card">
+                            <div class="carousel-image" style="background-image: url(image/work-2.jpg);">
+                                <div class="carousel-content">
+                                    <span class="category-tag">Web Design</span>
+                                    <h3 class="carousel-heading"><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="item">
+                        <div class="carousel-card">
+                            <div class="carousel-image" style="background-image: url(image/work-3.jpg);">
+                                <div class="carousel-content">
+                                    <span class="category-tag">Web Design</span>
+                                   <h3 class="carousel-heading"><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div class="item">
+                        <div class="carousel-card">
+                            <div class="carousel-image" style="background-image: url(image/work-4.jpg);">
+                                <div class="carousel-content">
+                                    <span class="category-tag">Web Design</span>
+                                    <h3 class="carousel-heading"><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 5 -->
+                    <div class="item">
+                        <div class="carousel-card">
+                            <div class="carousel-image" style="background-image: url(image/work-5.jpg);">
+                                <div class="carousel-content">
+                                    <span class="category-tag">Web Design</span>
+                                    <h3 class="carousel-heading"><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                items:3,    
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: true,
+                loop:true,
+                autoplay:true,
+                 autoPlayTime:2000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
